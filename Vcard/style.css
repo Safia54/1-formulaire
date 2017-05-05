@@ -1,0 +1,37 @@
+.container {
+	position: relative;
+	border: 3px solid #cccccc;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 80px;
+	padding: 80px;
+	background-color: orange;
+	box-shadow: 20px 20px 20px #ffb349
+}
+main {
+	position: relative;
+	width: 55%;
+}
+aside {
+	margin: auto;
+	float: right;
+	position: relative;
+	bottom: 230px;
+  background-color: white;
+  width: 500px;
+	border: 3px solid #cccccc;
+	box-sizing: border-box;
+}
+footer{
+	margin: auto;
+	border: 3px solid #cccccc;
+	box-sizing: border-box;
+	background-color: white;
+	padding-right: 100px;
+}
+.centrer{
+	text-align: justify;
+}
+.texte{
+	text-align: justify;
+}
