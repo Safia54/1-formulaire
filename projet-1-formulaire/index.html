@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> formulaire </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="medium-6 columns large-centered">
+        <img src=hackers-poulette-logo.png/>
+      </div>
+      <div class="medium-11 columns large-centered">
+        <h1> Vous avez un problème ? On va vous aider ! <br/> Remplissez le formulaire d'Hackers Poulette ! </h1>
+      </div>
+
+    </div>
+
+    <form method="post" action="traitement.php" class="medium-11 columns large-centered">
+
+      <fieldset class="fieldset">
+          <legend> Vos coordonnées d'identification </legend>
+          <div class="row">
+            <p class="medium-6 columns">
+              <label for="nom">Votre nom de famille :</label>
+              <input type="text" name="nom" id="nom" placeholder="Mettez votre nom ici s'il vous plait" size="30" maxlength="20" autofocus required aria-required="true"/>
+            </p>
+
+            <p class="medium-6 columns">
+              <label for="prenom">Votre prénom :</label>
+              <input type="text" name="prenom" id="prenom" placeholder="ex: Gertrude, Frénégonde, Hypolite, Jean-Gustave" size="40" maxlength="20" required aria-required="true"/>
+            </p>
+          </div>
+
+          <div class="row">
+            <p class="medium-6 columns">
+              <label for="email">Votre email :</label>
+              <input type="email" name = "email" placeholder="ex:gertrude@hotmail.com" required aria-required="true"/>
+            </p>
+
+             <p class="medium-6 columns">
+               <label for="pays">Dans quel pays habitez-vous ?</label>
+               <select name="pays" id="pays" required>
+                   <option value="Belgique" selected>Belgique</option>
+                   <option value="espagne">Espagne</option>
+                   <option value="italie">Italie</option>
+                   <option value="royaume-uni">Royaume-Uni</option>
+                   <option value="canada">Canada</option>
+                   <option value="etats-unis">États-Unis</option>
+                   <option value="chine">Chine</option>
+                   <option value="japon">Japon</option>
+               </select>
+             </p>
+
+             <p class="medium-6 columns end">
+              <label for="sexe">A qui ai-je l'honneur? Monsieur? Madame ? </label>
+              <input type="radio" name="sexe" value="feminin" id="feminin" required aria-required="true"/> <label for="feminin">F</label>
+              <input type="radio" name="sexe" value="masculin" id="masculin" required aria-required="true"/> <label for="masculin">M</label>
+              <input type="radio" name="sexe" value="indefini" id="indefini" required aria-required="true"/> <label for="indefini">X</label>
+            </p>
+          </div>
+      </fieldset>
+
+    <fieldset class="fieldset">
+      <legend> Objet du problème et donc, de la prise de contact </legend>
+
+      <div class="row">
+
+        <fieldset class="medium-6 columns">
+          <legend>A propos de quel sujet(s) vous nous contactez ? </legend>
+          <div>
+            <input id="kit" type="checkbox" value="kit"><label for="kit">Kit</label>
+          </div>
+          <div>
+            <input id="accessoires" type="checkbox" value="accessoires"><label for="accessoires">Accessoires</label>
+          </div>
+          <div>
+            <input id="autres" type="checkbox" value="autres"><label for="checkbox32">Autre(s)</label>
+          </div>
+        </fieldset>
+
+        <p class="medium-12 columns">
+          <label for="message">
+            Quel est votre problème qu'on prendra en charge avec plaisir :) ?
+          </label>
+          <textarea name="message" id="message" rows="10" cols="50" placeholder="Bonjour cher Hackers Poulette, Je rencontre un problème avec..." required aria-required="true">
+          </textarea>
+        </p>
+
+       </div>
+    </fieldset>
+
+    <div class="large-6 large-centered row">
+      <button type="submit" value="submit" class="primary button large round"> C'est bon, tout y est? Avez-vous posé toutes vos questions? Envoyez ! <button/>
+    </div>
+    </form>
+</body>
+</html>
